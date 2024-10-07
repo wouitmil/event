@@ -21,18 +21,5 @@
             </field>
         </field>
     </record>
-    <record id="view_registration_search" model="ir.ui.view">
-        <field name="name">Search attended registrations</field>
-        <field name="model">event.registration</field>
-        <field name="inherit_id" ref="event.view_registration_search" />
-        <field name="arch" type="xml">
-            <filter name="expected" position="after">
-                <filter
-                    name="done"
-                    domain="[('state', '=', 'done')]"
-                    string="Attended"
-                />
-            </filter>
-        </field>
-    </record>
+
 </odoo>
