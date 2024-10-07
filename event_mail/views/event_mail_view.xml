@@ -13,16 +13,16 @@
                     </group>
                     <group string="Mail Scheduler">
                         <field name="scheduler_template_ids" nolabel="1" colspan="2">
-                            <tree editable="bottom">
+                            <list editable="bottom">
                                 <field name="sequence" widget="handle" />
                                 <field name="template_ref" />
                                 <field
                                     name="interval_nbr"
-                                    attrs="{'readonly':[('interval_unit','=','now')]}"
+                                    readonly="[('interval_unit','=','now')]"
                                 />
                                 <field name="interval_unit" />
                                 <field name="interval_type" />
-                            </tree>
+                            </list>
                         </field>
                     </group>
                 </sheet>
